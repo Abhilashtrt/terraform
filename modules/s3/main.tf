@@ -20,11 +20,6 @@ resource "aws_s3_bucket" "s3Bucket" {
 }
 
 
-resource "aws_s3_bucket_acl" "s3BucketAcl" {
-  bucket = aws_s3_bucket.s3Bucket.bucket
-  acl    = "private"
-}
-
 data "aws_iam_policy_document" "s3_policy" {
   statement {
     effect    = "Allow"
