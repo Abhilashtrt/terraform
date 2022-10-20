@@ -22,5 +22,5 @@ variable "cidr" {
 
 variable "az_count" {
   description = "count for subnet"
-  default = 4
+  default = 2
 }

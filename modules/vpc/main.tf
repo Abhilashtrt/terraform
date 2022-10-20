@@ -30,6 +30,7 @@ data "aws_availability_zones" "available" {
 resource "aws_subnet" "private" {
   vpc_id                  = aws_vpc.main.id
   cidr_block              = cidrsubnet(aws_vpc.main.cidr_block, 4, count.index)
+  availability_zone       = data.aws_availability_zones.available.names[count.index]
   count                   = var.az_count
   map_public_ip_on_launch = false
 
@@ -42,6 +43,7 @@ resource "aws_subnet" "private" {
 resource "aws_subnet" "public" {
   vpc_id                  = aws_vpc.main.id
   cidr_block              = cidrsubnet(aws_vpc.main.cidr_block, 4, var.az_count + count.index)
+  availability_zone       = data.aws_availability_zones.available.names[count.index]
   count                   = var.az_count
   map_public_ip_on_launch = true
 
