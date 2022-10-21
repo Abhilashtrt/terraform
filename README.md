@@ -17,7 +17,7 @@ vars.tf     -> variables stored for infra
 
 ### 1x VPC (192.168.50.0/16) with 4 subnets:
 
-- the CIDR provided was not valid so I continued with 192.168.0.0/16
+- The CIDR provided was not valid so I continued with 192.168.0.0/16
 
 <div align="center">
 <a>
