@@ -1,6 +1,7 @@
 # Terraform-Task
 
 ## Layout
+```text
 .
 modules/    -> consists all modules
 ├─ route53/ -> IAC related to Route53
@@ -10,7 +11,7 @@ modules/    -> consists all modules
 output/     -> terraform plan output file inside this folder
 main.tf     -> module imported for building infra 
 vars.tf     -> variables stored for infra
-
+```
 - As we have a simple infra, I didn't create a separate provider.tf file so I added provider details inside the main file itself.
 
 
