@@ -28,7 +28,7 @@ vars.tf     -> variables stored for infra
 
 <div align="center">
 <a>
-    <img src="images/ec2.png" alt="ec2" width="400" height="400">
+    <img src="images/ec2.png" alt="ec2" width="600" height="400">
   </a>
 </div>
 
@@ -45,7 +45,7 @@ vars.tf     -> variables stored for infra
 
 <div align="center">
 <a>
-    <img src="images/route53.png" alt="ec2" width="400" height="400">
+    <img src="images/route53.png" alt="ec2" width="600" height="400">
   </a>
 </div>
 
@@ -53,6 +53,6 @@ vars.tf     -> variables stored for infra
 
 <div align="center">
 <a>
-    <img src="images/route53record.png" alt="ec2" width="400" height="400">
+    <img src="images/route53record.png" alt="ec2" width="600" height="400">
   </a>
 </div>
